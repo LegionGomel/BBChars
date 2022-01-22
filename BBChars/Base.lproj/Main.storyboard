@@ -47,6 +47,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Characters" id="GbH-VR-JSm"/>
                     <connections>
+                        <outlet property="tableView" destination="tnL-Oq-Jfx" id="6pj-p4-pBv"/>
                         <segue destination="ryf-PA-4kD" kind="show" identifier="ToCharacterDetailViewController" id="KFU-3p-AiD"/>
                     </connections>
                 </viewController>

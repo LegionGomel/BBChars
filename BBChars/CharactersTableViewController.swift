@@ -13,6 +13,13 @@ class CharactersTableViewController: UIViewController {
         static let characterDetail = "ToCharacterDetailViewController"
     }
     
+    enum Cells {
+        static let characterCell = "CharacterCell"
+    }
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+//    var manager =
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +27,20 @@ class CharactersTableViewController: UIViewController {
     
 }
 
+    
 extension CharactersTableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TODO:  need to replace with actual return
-        return 116
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //TODO:  need to replace with actual return
-        UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: Cells.characterCell, for: indexPath)
+        cell.textLabel?.text = "Test \(indexPath.row)"
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Segues.characterDetail, sender: self)
+        performSegue(withIdentifier: Segues.characterDetail, sender: nil)
     }
 }
