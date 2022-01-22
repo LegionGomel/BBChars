@@ -60,11 +60,11 @@
 			children = (
 				CE41B0B1279BD445002C775D /* AppDelegate.swift */,
 				CE41B0B3279BD445002C775D /* SceneDelegate.swift */,
-				CE41B0B7279BD445002C775D /* Main.storyboard */,
 				CE41B0C5279BD5BB002C775D /* CharactersTableViewController.swift */,
 				CE41B0C7279BD5D5002C775D /* CharacterDetailViewController.swift */,
-				CE41B0BA279BD446002C775D /* Assets.xcassets */,
+				CE41B0B7279BD445002C775D /* Main.storyboard */,
 				CE41B0BC279BD446002C775D /* LaunchScreen.storyboard */,
+				CE41B0BA279BD446002C775D /* Assets.xcassets */,
 				CE41B0BF279BD446002C775D /* Info.plist */,
 			);
 			path = BBChars;
