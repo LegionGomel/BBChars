@@ -10,7 +10,7 @@ import UIKit
 class CharactersTableViewController: UIViewController {
     
     enum Segues {
-        static let characterDetail = "ToCharacterDetailViewController"
+        static let toCharacterDetail = "ToCharacterDetailViewController"
     }
     
     enum Cells {
@@ -55,9 +55,12 @@ extension CharactersTableViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Segues.characterDetail, sender: nil)
+        let character = characters[indexPath.row]
+        performSegue(withIdentifier: Segues.toCharacterDetail, sender: character)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! CharactersDetailViewController
+        destinationVC.character = sender as? Character
     }
 }
