@@ -121,12 +121,8 @@
                             <constraint firstItem="kcL-KH-2hZ" firstAttribute="leading" secondItem="OJd-LC-n94" secondAttribute="leading" id="NgT-rK-Di4"/>
                             <constraint firstItem="n7y-N0-rRJ" firstAttribute="centerX" secondItem="8e7-eZ-uRa" secondAttribute="centerX" id="QYj-E8-zF3"/>
                             <constraint firstItem="e86-C3-sAy" firstAttribute="top" secondItem="WbE-qX-w5Y" secondAttribute="bottom" constant="8" id="TUw-4r-V0B"/>
-                            <constraint firstItem="e86-C3-sAy" firstAttribute="leading" secondItem="OJd-LC-n94" secondAttribute="leading" id="Z6e-C6-C5r"/>
-                            <constraint firstItem="WbE-qX-w5Y" firstAttribute="leading" secondItem="8e7-eZ-uRa" secondAttribute="leading" id="aXj-YG-xsm"/>
                             <constraint firstAttribute="trailing" secondItem="WbE-qX-w5Y" secondAttribute="trailing" id="fqM-F9-sob"/>
-                            <constraint firstItem="OJd-LC-n94" firstAttribute="trailing" secondItem="kcL-KH-2hZ" secondAttribute="trailing" id="jFY-WE-Kg9"/>
                             <constraint firstItem="n7y-N0-rRJ" firstAttribute="top" secondItem="ebM-mD-P6P" secondAttribute="bottom" constant="8" id="wkQ-CJ-vmh"/>
-                            <constraint firstItem="OJd-LC-n94" firstAttribute="trailing" secondItem="wph-fb-AYP" secondAttribute="trailing" id="xjP-jp-l6j"/>
                             <constraint firstItem="kcL-KH-2hZ" firstAttribute="top" secondItem="e86-C3-sAy" secondAttribute="bottom" constant="8" id="yxH-vz-aoc"/>
                         </constraints>
                     </view>
