@@ -20,7 +20,7 @@ class CharactersTableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var manager = NetworkManager()
+
     var characters = [Character]()
     
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class CharactersTableViewController: UIViewController {
     
     func getCharacters() {
         
-        manager.getCharacters { [weak self] (result) in
+        NetworkManager.shared.getCharacters { [weak self] (result) in
             
             switch result {
             case .failure(let error):

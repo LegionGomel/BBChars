@@ -6,13 +6,18 @@
 //
 
 import Foundation
+import UIKit
 
 
-class NetworkManager {
+final class NetworkManager {
+    static let shared = NetworkManager()
+    private let urlString = "https://www.breakingbadapi.com/api/characters?limit=10"
+    
+    private init() {}
     
     // function that does all - fetch, decode data and allow to use closures with Result obj.
     func getCharacters(completion: @escaping (Result<[Character], Error>) -> Void)   {
-        let urlString = "https://www.breakingbadapi.com/api/characters?limit=10"
+        
         
         // check for a valid URL
         guard let url = URL(string: urlString) else { return }
@@ -37,5 +42,22 @@ class NetworkManager {
                 completion(.failure(error))
             }
         }.resume()
+    }
+    
+    // function for retrieve image from URL
+    func getImage(fromURLString: String, completion: @escaping (UIImage?) -> Void) {
+        
+        guard let url = URL(string: fromURLString) else { return }
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            
+            // check for a valid downloaded image
+            guard let data = data, let image = UIImage(data: data) else {
+                completion(nil)
+                return
+            }
+            completion(image)
+        }
+        task.resume()
     }
 }
