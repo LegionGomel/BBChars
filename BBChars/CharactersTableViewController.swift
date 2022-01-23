@@ -9,6 +9,7 @@ import UIKit
 
 class CharactersTableViewController: UIViewController {
     
+    // enums are just for not to make any typos
     enum Segues {
         static let toCharacterDetail = "ToCharacterDetailViewController"
     }
@@ -24,6 +25,11 @@ class CharactersTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getCharacters()
+        
+    }
+    
+    func getCharacters() {
         
         manager.getCharacters { [weak self] (result) in
             
