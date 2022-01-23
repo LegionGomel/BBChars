@@ -28,7 +28,7 @@ final class NetworkManager {
                 completion(.failure(error))
             }
             
-            // check if there was an invalid responce code
+            // check for success response code
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 return
             }
@@ -51,6 +51,7 @@ final class NetworkManager {
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             
+            // check for success response code
             guard let responce = response as? HTTPURLResponse, responce.statusCode == 200 else {
                 return
             }

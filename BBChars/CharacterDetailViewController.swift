@@ -31,12 +31,12 @@ class CharactersDetailViewController: UIViewController {
             nickNameLabel.text = "Also known as: \(character.nickname)"
             birthDateLabel.text = "Birth date: \(character.birthday)"
             actorNameLabel.text = "Played by: \(character.portrayed)"
+            
             var occupations = ""
             for occupation in character.occupation {
                occupations += occupation + "; "
             }
             occupationLabel.text = "Professions in TV series: \n \(occupations)"
-            
         }
     }
     
