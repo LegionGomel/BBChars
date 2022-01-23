@@ -68,37 +68,37 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ODZ-Oz-Vtj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n7y-N0-rRJ">
-                                <rect key="frame" x="132" y="188" width="150" height="200"/>
+                                <rect key="frame" x="107" y="188" width="200" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="EwY-Uc-8xx"/>
-                                    <constraint firstAttribute="width" constant="150" id="v8c-9Y-Rp0"/>
+                                    <constraint firstAttribute="height" constant="300" id="EwY-Uc-8xx"/>
+                                    <constraint firstAttribute="width" constant="200" id="v8c-9Y-Rp0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NickName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbE-qX-w5Y">
-                                <rect key="frame" x="0.0" y="396" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="496" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actor name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcL-KH-2hZ">
-                                <rect key="frame" x="0.0" y="453.5" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="553.5" width="414" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occupation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wph-fb-AYP">
-                                <rect key="frame" x="0.0" y="489.5" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="589.5" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e86-C3-sAy">
-                                <rect key="frame" x="0.0" y="424.5" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="524.5" width="414" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

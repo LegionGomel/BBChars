@@ -23,13 +23,13 @@ final class NetworkManager {
         guard let url = URL(string: urlString) else { return }
         
         // create dataTask with results
-        URLSession.shared.dataTask(with: url) { data, responce, error in
+        URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 completion(.failure(error))
             }
             
             // check if there was an invalid responce code
-            guard let responce = responce as? HTTPURLResponse, responce.statusCode == 200 else {
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 return
             }
 
@@ -50,6 +50,10 @@ final class NetworkManager {
         guard let url = URL(string: fromURLString) else { return }
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            
+            guard let responce = response as? HTTPURLResponse, responce.statusCode == 200 else {
+                return
+            }
             
             // check for a valid downloaded image
             guard let data = data, let image = UIImage(data: data) else {

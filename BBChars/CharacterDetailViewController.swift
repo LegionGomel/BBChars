@@ -20,11 +20,12 @@ class CharactersDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateLabels()
+        updateCharacterLabels()
+        getCharacterImage()
 
     }
     
-    func updateLabels() {
+    func updateCharacterLabels() {
         if let character = character {
             nameLabel.text = character.name
             nickNameLabel.text = "Also known as: \(character.nickname)"
@@ -36,6 +37,16 @@ class CharactersDetailViewController: UIViewController {
             }
             occupationLabel.text = "Professions in TV series: \n \(occupations)"
             
+        }
+    }
+    
+    func getCharacterImage() {
+        if let character = character {
+            NetworkManager.shared.getImage(fromURLString: character.img) { image in
+                DispatchQueue.main.async { [weak self] in
+                    self?.characterImageView.image = image
+                }
+            }
         }
     }
 }
